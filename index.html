@@ -4,43 +4,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Bofan Yu</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #222;
+            line-height: 1.6;
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 25px;
+        }
+
+        header {
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 40px;
+        }
+
+        nav {
+            margin-bottom: 25px;
+        }
+
+        nav a {
+            margin-right: 25px;
+            text-decoration: none;
+            color: #8C1515;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .intro {
+            display: flex;
+            align-items: flex-start;
+            gap: 35px;
+        }
+
+        .intro-text {
+            flex: 1;
+        }
+
+        .profile-photo {
+            width: 190px;
+            border-radius: 6px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            margin-top: 45px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        a {
+            color: #8C1515;
+        }
+
+        .links a {
+            margin-right: 15px;
+        }
+
+        .publication {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #777;
+            font-size: 14px;
+        }
+
+        @media (max-width: 650px) {
+            .intro {
+                flex-direction: column;
+            }
+
+            .profile-photo {
+                width: 160px;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
 
-    <h1>Maeve Qiao</h1>
+<div class="container">
 
-    <p>
-        Ph.D. Student<br>
-        Department of Civil and Environmental Engineering<br>
-        Stanford University
-    </p>
+    <header>
 
-    <h2>About Me</h2>
+        <h1>Bofan Yu</h1>
 
-    <p>
-        I am a Ph.D. student at Stanford University.
-        My research focuses on ground-motion modeling,
-        spatial correlation, and seismic risk.
-    </p>
+        <p>
+            Ph.D. Student<br>
+            Department of Civil and Environmental Engineering<br>
+            Stanford University
+        </p>
 
-    <h2>Research</h2>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#publications">Publications</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-    <ul>
-        <li>Ground-motion modeling</li>
-        <li>Spatial correlation of ground motions</li>
-        <li>Seismic hazard and risk</li>
-        <li>Statistical modeling</li>
-    </ul>
+    </header>
 
-    <h2>Publications</h2>
 
-    <p>Coming soon.</p>
+    <section id="about">
 
-    <h2>Contact</h2>
+        <div class="intro">
 
-    <p>Stanford University</p>
+            <!-- Later we will add your photo here -->
+            <!--
+            <img src="profile.jpg"
+                 alt="Bofan Yu"
+                 class="profile-photo">
+            -->
+
+            <div class="intro-text">
+
+                <h2>About Me</h2>
+
+                <p>
+                    I am a Ph.D. student in the Department of Civil and
+                    Environmental Engineering at Stanford University.
+                    My research focuses on ground-motion modeling,
+                    spatial correlation, and seismic risk.
+                </p>
+
+                <div class="links">
+
+                    <a href="#">CV</a>
+
+                    <a href="#">Google Scholar</a>
+
+                    <a href="https://github.com/BofanYu">
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="research">
+
+        <h2>Research</h2>
+
+        <ul>
+            <li>Ground-motion modeling</li>
+            <li>Spatial correlation of ground motions</li>
+            <li>Seismic hazard and risk</li>
+            <li>Statistical modeling</li>
+        </ul>
+
+    </section>
+
+
+    <section id="publications">
+
+        <h2>Publications</h2>
+
+        <div class="publication">
+
+            <strong>Paper Title</strong><br>
+
+            Bofan Yu, Coauthor Name, ...<br>
+
+            <em>Journal Name</em>, 2026.
+
+            <br>
+
+            <a href="#">Paper</a> |
+            <a href="#">Code</a>
+
+        </div>
+
+    </section>
+
+
+    <section id="contact">
+
+        <h2>Contact</h2>
+
+        <p>
+            Department of Civil and Environmental Engineering<br>
+            Stanford University<br>
+            Stanford, CA
+        </p>
+
+    </section>
+
+
+    <footer>
+
+        © 2026 Bofan Yu
+
+    </footer>
+
+
+</div>
 
 </body>
 
